@@ -32,7 +32,7 @@ const ProfilePage = () => {
                 <p>Cargando perfil...</p>
             ) : (
                 <>
-                    <h1>{profile?.firstName} {profile?.lastName}</h1>
+                    <h1 className="userName__Wrapper">{profile?.firstName} {profile?.lastName}</h1>
                     <img src={profile?.profileImage} alt="Profile"/>
                     <input type="file" aria-label={"Subir imagen"} onChange={handleImageUpload}/>
                     <button onClick={handleLogout}>Cerrar sesión</button>
